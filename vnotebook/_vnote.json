@@ -32,6 +32,9 @@
         },
         {
             "name": "Blog"
+        },
+        {
+            "name": "Docker"
         }
     ],
     "version": "1"
