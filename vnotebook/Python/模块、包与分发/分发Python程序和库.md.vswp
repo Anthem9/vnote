@@ -1,0 +1,64 @@
+vnote_backup_file_826537664 C:/Users/83770/Documents/vnote_notebooks/vnotebook/模块、包与分发/分发Python程序和库.md
+# 分发Python程序和库
+* 要将Python程序分发给他人，应该使用distutils模块。
+* 准备阶段，应该首先将你的程序有序地组织到一个包含README文件、支持文档和源代码的目录中。
+* 通常，这个目录将包含一组库模块、包和脚本。
+* 模块和包指的是将用import语句加载的源文件。
+* 脚本是将作为主程序由解释器运行的程序（例如，以python scriptname这种形式运行）。
+```python
+spam/
+    README.txt
+    Document.txt
+    libspam.py
+    spampkg/
+        __init__.py
+        foo.py
+        bar.py
+    runspam.py
+```
+* 组织代码时，应确保在顶层目录中运行Python解释器时它也能够正常工作。例如，如果在spam目录中启动Python，应该能够导入模块、导入包组件以及运行脚本，而无需更改Python
+的任何设置，如模块搜索路径。
+* 组织好代码之后，在最顶层目录中（如上例中的spam）创建文件setup.py。
+* 在该文件中添加以下代码：
+```python
+# setup.py
+from distutils.core import setup
+
+setup(name = "spam",
+    version = "1.0",
+    py_modules = ['libspam'],
+    packages = ['spampkg'],
+    scripts = ['runspam.py'],
+    )
+```
+
+* 在setup()的调用中，py_modules参数是所有单一文件Python模块的列表，packages是所有包目录的列表，scripts是脚本文件的列表。
+* 如果你的软件没有任何匹配的组件（例如，没有脚本），对应的参数都可以省略。
+* name是包的名称，version是字符串形式的版本号。
+* 只需创建一个setup.py文件就足以创建软件的源代码分发版本了。
+* 输入以下shell命令即可进行源代码分发：
+```python
+% python setup.py sdist
+...
+%
+```
+* 这将在目录spam/dist下创建一个压缩文件，如spam-1.0.tar.gz或spam-1.0zip。
+* 这就是将提供给其他人安装软件的文件。
+* 要安装软件，用户只需解压该归档文件并执行以下步骤：
+```python
+% unzip spam-1.0.zip
+...
+% cd spam-1.0
+% python setup.py install
+...
+```
+* 这将把软件安装在本地Python分发目录下，使其可以普遍使用。
+* 模块和包通常安装在Python库中名为site-packages的目录下。
+* 要找到该目录的准确位置，可以检查sys.path的值。
+* 在基于UNIX的系统上，脚本通常安装在与Python解释器相同的目录下。
+* 在Windows上，通常安装在Scripts目录下。
+
+* 在UNIX上，如果脚本第一行以#！开头并且包含文本python，安装程序将重写该行以指向本地Python安装。
+* 因此，如果编写的脚本已被硬编码为特定的Python位置，如/usr/local/bin/python，当安装在Python位于不同位置的其他系统上时，这些脚本仍然能够运行。
+
+## 预编译、可执行文件和.egg文件
