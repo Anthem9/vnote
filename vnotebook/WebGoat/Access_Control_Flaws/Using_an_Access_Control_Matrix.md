@@ -1,4 +1,4 @@
-# Using_an_Access_Contorl_Matrix
+# Using_an_Access_Control_Matrix
 使用访问控制模型
 ![](https://github.com/Anthem9/vnote/raw/master/vnotebook/WebGoat/Access_Control_Flaws/_v_images/_1525229245_8386.png)
 ## 技术概念或主题（Concept / Topic To Teach）
