@@ -1,5 +1,5 @@
 # Docker入门
-![](_v_images/_1524657822_18293.png)
+![](https://github.com/Anthem9/vnote/raw/master/vnotebook/Docker/_v_images/_1524657822_18293.png)
 ## 起因&&闲聊
 学习``Docker``的起因是这样的，星辰``DevOps``组的学长转发了一个广告，那人说要解决一个问题，是安全方向的，然后我面试的时候说过自己对安全有兴趣，结果学长就让我去试试。
 
@@ -71,21 +71,25 @@
 看到安装了``Vbox``和``Git Bash``想来是要模拟``Linux``环境了，``Windows``果然麻烦的一匹。
 
 完成后会有下图三个图标
-![](_v_images/_1524659633_18828.png)
+
+![](https://github.com/Anthem9/vnote/raw/master/vnotebook/Docker/_v_images/_1524659633_18828.png)
+
 双击``Docker Quickstart Terminal``，会提示错误，如图：
-![](_v_images/_1524659666_12661.png)
+
+![](https://github.com/Anthem9/vnote/raw/master/vnotebook/Docker/_v_images/_1524659666_12661.png)
+
 这时，点击浏览，找到``git``安装目录下的``bin``目录，选择``bin``目录下的``bash.exe``文件，点击确定，``Docker``开始初始化。
 
 初始化过程中如果下载``boot2docker.iso``没反应，可以直接从``GitHub``[下载](https://github.com/boot2docker/boot2docker/releases/download/v18.04.0-ce/boot2docker.iso)，直接复制到那个文件里
 
 成功后界面如下图：
-![](_v_images/_1524659700_7710.png)
+![](https://github.com/Anthem9/vnote/raw/master/vnotebook/Docker/_v_images/_1524659700_7710.png)
 到此成功在``Windows 10``中安装``Docker``，但是每次启动都需要手动选择``bash.exe``文件。
 
 其他操作系统的安装请参考[官方文档](https://docs.docker.com/)
 
 ## 一把梭
-![](_v_images/_1524660237_24106.png)
+![](https://github.com/Anthem9/vnote/raw/master/vnotebook/Docker/_v_images/_1524660237_24106.png)
 ```bash
 docker pull webgoat/webgoat-7.1
 docker run -p 8080:8080 -t webgoat/webgoat-7.1
@@ -104,11 +108,11 @@ docker run -p 8080:8080 -t webgoat/webgoat-7.1
 
 ### Docker容器的IP
 当你运行``Docker``的时候，注意这个地方
-![](_v_images/_1524660762_29280.png)
+![](https://github.com/Anthem9/vnote/raw/master/vnotebook/Docker/_v_images/_1524660762_29280.png)
 这就是这个容器的``IP``
 
 当你运行``WebGoat``的时候，不要被它骗了
-![](_v_images/_1524660894_17757.png)
+![](https://github.com/Anthem9/vnote/raw/master/vnotebook/Docker/_v_images/_1524660894_17757.png)
 不管它怎么在``localhost``欢迎你去``hacking``，你要记得去访问上面哪个``IP``
 ```url
 192.168.99.100:8080/WebGoat

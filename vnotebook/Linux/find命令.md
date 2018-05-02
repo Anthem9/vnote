@@ -5,7 +5,7 @@
 ```bash
 find .
 ```
-* 在/home目录下查找以.txt结尾的文件名
+* 在``/home``目录下查找以``.txt``结尾的文件名
 ```bash
 find /home -name "*.txt"
 ```
@@ -13,3 +13,4 @@ find /home -name "*.txt"
 ```bash
 find /home -iname "*.txt"
 ```
+* 注意，虽然``name``是一个完整的单词，但前面只有一条横线

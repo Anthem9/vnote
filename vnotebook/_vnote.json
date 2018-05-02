@@ -35,6 +35,18 @@
         },
         {
             "name": "Docker"
+        },
+        {
+            "name": "WebGoat"
+        },
+        {
+            "name": "PWN"
+        },
+        {
+            "name": "VulnServer"
+        },
+        {
+            "name": "国赛wp"
         }
     ],
     "version": "1"

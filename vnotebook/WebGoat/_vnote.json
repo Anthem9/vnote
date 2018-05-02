@@ -1,0 +1,35 @@
+{
+    "created_time": "2018-04-25T14:08:15Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2018-05-01T15:37:26Z",
+            "modified_time": "2018-05-01T22:30:43Z",
+            "name": "WebGoat启程.md"
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2018-05-01T22:25:07Z",
+            "modified_time": "2018-05-01T22:25:07Z",
+            "name": "WebGoat_HTTP_basics.md"
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2018-05-01T22:36:10Z",
+            "modified_time": "2018-05-01T22:36:10Z",
+            "name": "WebGoat模板.md"
+        }
+    ],
+    "sub_directories": [
+        {
+            "name": "AJAX_Security"
+        }
+    ],
+    "version": "1"
+}
