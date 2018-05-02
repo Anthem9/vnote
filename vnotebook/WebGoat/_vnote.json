@@ -14,7 +14,7 @@
             "attachments": [
             ],
             "created_time": "2018-05-01T22:25:07Z",
-            "modified_time": "2018-05-01T22:25:07Z",
+            "modified_time": "2018-05-02T00:35:45Z",
             "name": "WebGoat_HTTP_basics.md"
         },
         {
@@ -29,6 +29,57 @@
     "sub_directories": [
         {
             "name": "AJAX_Security"
+        },
+        {
+            "name": "Access_Control_Flaws"
+        },
+        {
+            "name": "Authentication_Flaws"
+        },
+        {
+            "name": "Buffer_Overflows"
+        },
+        {
+            "name": "Code_Quality"
+        },
+        {
+            "name": "Concurrency"
+        },
+        {
+            "name": "Cross-Site_Scripting(XSS)"
+        },
+        {
+            "name": "Improper_Error_Handling"
+        },
+        {
+            "name": "Injection_Flaws"
+        },
+        {
+            "name": "Denial_of_Service"
+        },
+        {
+            "name": "Insecure_Communication"
+        },
+        {
+            "name": "Insecure_Storage"
+        },
+        {
+            "name": "Malicious_Execution"
+        },
+        {
+            "name": "Parameter_Tampering"
+        },
+        {
+            "name": "Session_Management_Flaws"
+        },
+        {
+            "name": "Web_Services"
+        },
+        {
+            "name": "Admin_Functions"
+        },
+        {
+            "name": "Challenge"
         }
     ],
     "version": "1"
