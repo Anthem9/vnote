@@ -1,7 +1,7 @@
-vnote_backup_file_826537664 C:/Users/83770/Documents/vnote_notebooks/vnotebook/WebGoat/Access_Control_Flaws/Using_an_Access_Contorl_Matrix.md
-# Using_an_Access_Contorl_Matrix
+vnote_backup_file_826537664 C:/Users/83770/Documents/vnote_notebooks/vnotebook/WebGoat/Access_Control_Flaws/Using_an_Access_Control_Matrix.md
+# Using_an_Access_Control_Matrix
 使用访问控制模型
-![](_v_images/_1525229245_8386.png)
+![](https://github.com/Anthem9/vnote/raw/master/vnotebook/WebGoat/Access_Control_Flaws/_v_images/_1525229245_8386.png)
 ## 技术概念或主题（Concept / Topic To Teach）
 >In a role-based access control scheme, a role represents a set of access permissions and privileges. A user can be assigned one or more roles. A role-based access control scheme normally consists of two parts: role permission management and role assignment. A broken role-based access control scheme might allow a user to perform accesses that are not allowed by his/her assigned roles, or somehow allow privilege escalation to an unauthorized role.
 
@@ -22,5 +22,5 @@ vnote_backup_file_826537664 C:/Users/83770/Documents/vnote_notebooks/vnotebook/W
 ## 操作方法（Solutions）
 >This exercise is straightforward. You need to find a user where you can access a resource that you shouldn't be able to access.
 
-![](_v_images/_1525229372_2326.png)
+![](https://github.com/Anthem9/vnote/raw/master/vnotebook/WebGoat/Access_Control_Flaws/_v_images/_1525229372_2326.png)
 >After a few attempts you will learn that Larry can access resources of the role Account Manager.
