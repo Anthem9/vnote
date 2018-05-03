@@ -31,5 +31,3 @@ The user should be able to access a file that is not in the listed directory.
 ![](https://github.com/Anthem9/vnote/raw/master/vnotebook/WebGoat/Access_Control_Flaws/_v_images/_1525274852_29261.png)
 
 * 还是不行，把``spring-security.xml``的权限改为``777``，仍然失败，gg。
-
-* 
