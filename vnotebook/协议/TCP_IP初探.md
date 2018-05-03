@@ -10,19 +10,19 @@
 
 ## 组成
 
-![](_v_images/_1525345982_3895.png)
+![](https://github.com/Anthem9/vnote/raw/master/vnotebook/%E5%8D%8F%E8%AE%AE/_v_images/_1525345982_3895.png)
 
 当数据在网路中传输的时候，会依次进过每一层，最终呈现给用户
 
 ## TCP/IP体系和协议栈之间的关系
 
-![](_v_images/_1525346196_27548.png)
+![](https://github.com/Anthem9/vnote/raw/master/vnotebook/%E5%8D%8F%E8%AE%AE/_v_images/_1525346196_27548.png)
 
 我们可以看出，我们熟知的**DNS**，**FTP**等等协议，都是在应用层上的协议，下面我用FTP做例子讲解这个**从上到下**又**从下到上**的过程
 
 ### 基于TCP/IP的文件传输协议(FTP)
 
-![](_v_images/_1525346229_31122.png)
+![](https://github.com/Anthem9/vnote/raw/master/vnotebook/%E5%8D%8F%E8%AE%AE/_v_images/_1525346229_31122.png)
 
 原始数据在应用层加上了一个**FTP头**之后，在传输层加上了**TCP头**，依次类推，到达目的之后，又**反方向**脱去数据头，最终呈现原始的数据
 
@@ -129,10 +129,10 @@ C类的**私有IP**为
 在数据传输过程中，应用层中的各种不同的服务器进程不断地检测分配给它们的端口，以便发现是否有某个应用进程要与它通信。
 
 ## TCP三次握手
-![](_v_images/_1525348817_4797.png)
+![](https://github.com/Anthem9/vnote/raw/master/vnotebook/%E5%8D%8F%E8%AE%AE/_v_images/_1525348817_4797.png)
 
 ## TCP四次挥手
-![](_v_images/_1525348832_13378.png)
+![](https://github.com/Anthem9/vnote/raw/master/vnotebook/%E5%8D%8F%E8%AE%AE/_v_images/_1525348832_13378.png)
 
 TCP/IP是全双工的，每个方向都必须单独进行关闭。
 
